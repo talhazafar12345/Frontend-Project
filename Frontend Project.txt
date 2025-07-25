@@ -1,0 +1,805 @@
+App.JSX
+
+import { BrowserRouter as Router, Routes, Route, NavLink } from "react-router-dom";
+import User from "./User"
+import UserAdd from "./UserAdd"
+import World from "./World"
+import Wrapper from "./Wrapper"
+import image2 from "./assets/image2.png"
+
+
+import "./CSS/style.css"
+
+export default function Print() {
+  return (
+    <Router>
+
+      <div className="p1">
+        <img src={image2} alt="" />
+        <NavLink className="link" to="/apps">Apps</NavLink>
+        <NavLink className="link" to="/themes">Themes</NavLink>
+        <NavLink className="link" to="custom">CustomStoreFronts</NavLink>
+        <NavLink className="link" to="/market">MarketPlaces</NavLink>
+        <details>
+          <summary>Apis and Refferences</summary>
+        </details>
+
+
+
+        <Routes>
+          <Route path="/apps"></Route>
+          <Route path="/themes"></Route>
+          <Route path="/custom"></Route>
+          <Route path="/market"></Route>
+          <Route path="/apis"></Route>
+        </Routes>
+
+  
+   
+      </div>
+      <User />
+      <UserAdd />
+      <World />
+      <Wrapper />
+    </Router>
+  );
+}
+
+User.JSX
+
+import image3 from "./assets/image3.png"
+import image4 from "./assets/image4.png"
+import image5 from "./assets/image5.png"
+import image6 from "./assets/image6.png"
+import image7 from "./assets/image7.png"
+
+
+import "./CSS/style.css"
+
+export default function User() {
+
+
+
+    return (
+
+        <div>
+
+            <div className="main">
+                <div className="andar">
+                    <h1>Build anything.</h1>
+                    <h1>Reimagine Commerce</h1>
+                    <p>Millions of merchants trust shopify to run their business-but they need developers to build the tool that help them achieve independence. Access powerful APIS to bring their ideas to lige on the platform that makes commerce better for everyone.</p>
+
+                    <h3>Develop Apps that solved complex merchant problems</h3>
+                    <p>Expensive Graph QL and Rest APIS let you integrate into shopifys admin, online store, checkout and more</p>
+
+                    <h3>Integrate seamlessly into existing workflows</h3>
+                    <p>Embed your app feature with App bridge create high quality experiences wiwthw the ready to build Polaris component library</p>
+
+                    <h3>Help merchant express themselves</h3>
+                    <p>use liquid to build beautiful themes template. Get started with Dawn, our blazingly fast accessible reference theme</p>
+
+                    <h3>Ship custom shopping experiences</h3>
+                    <p>Add shopify to any web, mobile or gaming experiences wiwth the powerful storeFront ApI and SDK,S plus any frontend stackyou want. Use marketplace kit to connect your platforms and its users to millions of shopify merchants and their products</p>
+                </div>
+
+                <div className="kk1">
+                    <img src={image3} alt="" />
+                </div>
+            </div>
+
+            <div className="apt">
+
+
+                <div className="apps">
+                    <button><img src={image4} alt="" /> Apps</button>
+                </div>
+
+                <div className="theme">
+                    <button><img src={image5} alt="" />Themes</button>
+                </div>
+            </div>
+
+            <div className="stm">
+
+                <div className="store">
+                    <button><img src={image6} alt="" />Storefronts</button>
+                </div>
+
+
+                <div className="market">
+                    <button><img src={image7} alt="" /> MarketPlaces</button>
+                </div>
+
+            </div>
+        </div>
+    )
+}
+
+UserAdd.Jsx
+
+import "./CSS/style.css"
+import image8 from "./assets/image8.png"
+import image9 from "./assets/image9.png"
+import image10 from "./assets/image10.png"
+
+export default function UserAdd() {
+
+    return (
+
+
+        <div className="back">
+
+
+            <div className="line">
+
+        
+
+            <div>
+                <h1>Launch your app or theme to millions of merchants</h1>
+                <h2>App Store</h2>
+                <p>Get your app in front of the right merchants. With personalized recommandations and multiple billing options, the shopify app store is where merchants go to find the apps their business needs most </p>
+                <h2>Theme Store</h2>
+                <p>sell your the to merchants to building their brands on the shopify theme store. which offers flexible pricing and targeted merchandizing</p>
+            </div>
+
+
+
+            <div className="total">
+                <div className="rgf">
+                    <img src={image8} alt="" />
+                    <p>Revenue generated from the Shopify ecosystem(2020)</p>
+                </div>
+
+                <div className="mer">
+                    <img src={image9} alt="" />
+                    <h3>3 in 4 merchants use apps</h3>
+                </div>
+
+                <div className="average">
+                    <img src={image10} alt="" />
+                    <h3>Average number of apps installed per merchant</h3>
+                </div>
+            </div>
+            </div>
+
+        </div>
+    )
+}
+
+World.JSX
+
+import "./CSS/style.css"
+
+export default function World() {
+
+
+
+    return (
+        <div>
+
+            <div className="third">
+
+                <div className="join">
+                    <img src={image11} alt="" />
+                    <h2>Join a community of builders</h2>
+
+                </div>
+
+
+                <div className="developer">
+                    <img src={image12} alt="" />
+                    <h3>Developer Forms →</h3>
+                    <p>Q&A and advice from shoppify community experts</p>
+
+                </div>
+
+
+
+                <div className="connection">
+                    <img src={image13} alt="" />
+                    <h3>#development on stack → </h3>
+                    <p>Collaboration and connection with shopify employees</p>
+                </div>
+
+
+
+                <div className="twitter">
+                    <img src={image14} alt="" />
+                    <h3>@Shopify adds on Twitter →</h3>
+                    <p>Product announcements, APIS updates tips and more</p>
+                </div>
+            </div>
+
+
+
+
+            <div className="free">
+                <div className="latest">
+                    <img src={image15} alt="" />
+                    <h3>Developer Changelog  →</h3>
+                    <p>The latest shopify ecosystem updates</p>
+
+                </div>
+
+
+
+                <div className="channel">
+                    <img src={image16} alt="" />
+                    <h3>ShopifyDevs Youtube Channnel  →</h3>
+                    <p>Tips and inside dev and design</p>
+
+                </div>
+
+
+                <div className="demo">
+                    <img src={image17} alt="" />
+                    <h3>ShopifyDevs Twitch Channel  →</h3>
+                    <p>Tests and demo streams</p>
+                </div>
+
+
+
+                <div className="partners">
+                    <img src={image18} alt="" />
+                    <h3>Shopify Partners Blog</h3>
+                    <p>Educationsl resources and product previews</p>
+                </div>
+            </div>
+        </div>
+    )
+
+}
+
+Wrapper.JSX
+
+import "./CSS/style.css"
+export default function Wrapper() {
+
+
+
+    return (
+
+        <div className="nbc">
+
+            <div className="nds">
+                <h3>News and Updates</h3>
+                <p>Developer changelog</p>
+                <p>Shopify status</p>
+
+            </div>
+
+
+            <div className="bpe">
+                <h3>Blogs</h3>
+                <p>Partner Blog</p>
+                <p>Engineering Blog</p>
+                <p>UX Blog</p>
+            </div>
+
+
+            <div className="cdp">
+                <h3>Community</h3>
+                <p>Developer Forumns</p>
+                <p>Partner Stack</p>
+                <p>Facebook Group</p>
+            </div>
+
+
+            <div className="eum">
+                <h3>Events</h3>
+                <p>Unite</p>
+                <p>Meetup</p>
+                <p>Partner Town Hall</p>
+            </div>
+
+
+            <div className="lta">
+                <h3>Legal</h3>
+                <p>Terms of Service</p>
+                <p>API Terms of Service</p>
+                <p>Private Policy</p>
+                <p>Partner Program Agreement</p>
+            </div>
+
+
+        </div>
+    )
+}
+
+
+Style.CSS
+
+.p1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    background-color: red;
+    height: 50px;
+
+
+}
+
+.p1 img{
+    width: 70px;
+}
+
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+
+.active{
+    background-color: black;
+    color: white;
+}
+
+
+
+.main {
+    display: flex;
+    justify-content: center;
+    margin: 65px;
+
+}
+
+
+.kk1 {
+margin-top: 110px;
+margin-right: 40px;
+
+}
+
+
+.apps button{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    height: 40px;
+    width: 114px;
+}
+
+.apps img{
+    width: 30px;
+}
+
+
+
+.theme button{
+
+     display: flex;
+    align-items: center;
+    gap: 5px;
+    height: 40px;
+    width: 170px;
+    margin-left: 2px;
+}
+
+.theme img{
+    width: 30px;
+}
+
+
+.apt{
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    margin: 65px;
+    position: relative;
+    bottom: 40px;
+}
+
+
+.store button{
+display: flex;
+    align-items: center;
+    gap: 5px;
+    height: 40px;
+
+}
+
+
+.store img{
+    width: 30px;
+}
+
+
+.market button {
+
+display: flex;
+    align-items: center;
+    gap: 5px;
+    height: 40px;
+    width: 170px;
+
+}
+
+.market img{
+    width: 30px;
+}
+
+
+.stm {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    margin: 65px;
+    position: relative;
+    bottom: 80px;
+
+}
+
+button{
+    background-color: orangered;
+    color: white;
+}
+
+
+button:hover{
+    background-color: blue;
+    color: white;
+}
+
+button:focus{
+background-color: brown;
+color: yellow;
+}
+
+button:active{
+    background-color: chartreuse;
+}
+
+
+
+.back{
+    background-color: skyblue;
+    position: relative;
+    bottom: 70px;
+    padding: 65px;
+}
+
+
+.rgf{
+   
+  display: flex;
+  align-items: center;
+  
+}
+
+
+.mer{
+
+    display: flex;
+  align-items: center;
+}
+
+
+.average{
+    display: flex;
+  align-items: center;
+}
+
+
+
+.total{
+    border: 2px solid black;
+    width: 550px;
+    padding: 5px;
+    box-shadow: 10px 20px 10px black;
+    margin-left: 10px;
+}
+
+
+.total:hover {
+  background-color: #ff1e56;      /* Bright red-pink */
+  color: white;
+  box-shadow: 0 0 20px rgba(255, 30, 86, 0.6);
+  transform: scale(1.02);
+}
+
+
+.line{
+    display: flex;
+    margin-right: 30px;
+}
+
+
+
+.join{
+    border: 4px solid black;
+    width: 200px;
+    text-align: center;
+    background-color: lightblue;
+}
+
+.join:hover{
+    background-color: red;
+    color: white;
+    transform: scale(1.2);
+}
+
+
+
+.developer{
+    border: 4px solid black;
+    width: 200px;
+    text-align: center;
+
+}
+
+.developer:hover{
+    background-color: red;
+    color: white;
+    transform: scale(1.2);
+}
+
+.developer p{
+    position: relative;
+    top: 40px;
+
+}
+
+.developer h3{
+    position: relative;
+    top: 20px;
+
+}
+
+
+
+.connection{
+    border: 4px solid black;
+    width: 200px;
+    text-align: center;
+
+}
+
+.connection:hover{
+    background-color: red;
+    color: white;
+    transform: scale(1.2);
+}
+
+
+
+
+.twitter{
+ border: 4px solid black;
+    width: 200px;
+    text-align: center;
+
+}
+
+.twitter:hover{
+    background-color: red;
+    color: white;
+    transform: scale(1.2);
+}
+
+
+
+
+.third{
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+
+.latest{
+border: 4px solid black;
+    width: 200px;
+    text-align: center;
+    
+}
+
+.latest p{
+padding-top: 20px;
+}
+
+
+.latest:hover{
+    background-color: red;
+    color: white;
+    transform: scale(1.2);
+}
+
+
+.channel{
+
+    border: 4px solid black;
+    width: 200px;
+    text-align: center;
+
+
+}
+
+
+.channel:hover{
+    background-color: red;
+    color: white;
+    transform: scale(1.2);
+}
+
+
+.demo{
+
+    border: 4px solid black;
+    width: 200px;
+    text-align: center;
+
+
+}
+
+.demo:hover{
+    background-color: red;
+    color: white;
+    transform: scale(1.2);
+}
+
+
+
+.partners{
+
+    border: 4px solid black;
+    width: 200px;
+    text-align: center;
+}
+
+
+.partners p{
+    padding-top: 23px;
+}
+
+
+.partners h3{
+    position: relative;
+    top: 4px;
+}
+
+
+
+.partners:hover{
+    background-color: red;
+    color: white;
+    transform: scale(1.2);
+}
+
+
+.free{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.nbc{
+background-color: black;
+display: flex;
+justify-content: space-around;
+margin-top:50px;
+padding-top: 50px;
+color: white;
+}
+
+
+.bpe p:hover{
+    color: brown;
+}
+
+
+.nds p:hover{
+    color: brown;
+}
+
+
+.cdp p:hover{
+    color: brown;
+}
+
+
+.eum p:hover{
+    color: brown;
+}
+
+
+.lta p:hover{
+    color: brown;
+}
+
+
+
+
+@media (max-width: 600px) {
+  .p1 {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .p1 img {
+    width: 100px;
+  }
+
+  .main,
+  .back,
+  .free,
+  .third {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    gap: 20px;
+  }
+
+  .kk1 {
+    margin: 40px 0 20px 0;
+  }
+
+  .apps button,
+  .theme button,
+  .store button,
+  .market button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .total {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .join,
+  .developer,
+  .connection,
+  .twitter,
+  .latest,
+  .channel,
+  .demo,
+  .partners {
+    width: 100%;
+  }
+
+  .nbc {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 10px;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .line {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  button {
+    width: 90% !important;
+  }
+
+
+  .apt{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .stm{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .developer p{
+    padding-bottom:40px;
+  }
+}
+
+
+
+
+
+
+
