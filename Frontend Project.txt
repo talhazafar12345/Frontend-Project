@@ -169,6 +169,16 @@ export default function UserAdd() {
 
 World.JSX
 
+
+import image11 from "./assets/image11.png"
+import image12 from "./assets/image12.png"
+import image13 from "./assets/image13.png"
+import image14 from "./assets/image14.png"
+import image15 from "./assets/image15.png"
+import image16 from "./assets/image16.png"
+import image17 from "./assets/image17.png"
+import image18 from "./assets/image18.png"
+
 import "./CSS/style.css"
 
 export default function World() {
@@ -376,7 +386,6 @@ margin-right: 40px;
     gap: 5px;
     height: 40px;
     width: 170px;
-    margin-left: 2px;
 }
 
 .theme img{
@@ -537,16 +546,17 @@ button:active{
     transform: scale(1.2);
 }
 
-.developer p{
-    position: relative;
-    top: 40px;
 
-}
 
 .developer h3{
     position: relative;
     top: 20px;
 
+}
+
+.developer p{
+    position: relative;
+    top: 20px;
 }
 
 
@@ -585,8 +595,7 @@ button:active{
 
 .third{
     display: flex;
-    justify-content: space-around;
-
+    justify-content:center;
 
 }
 
@@ -684,6 +693,7 @@ justify-content: space-around;
 margin-top:50px;
 padding-top: 50px;
 color: white;
+gap: 30px;
 }
 
 
@@ -710,8 +720,6 @@ color: white;
 .lta p:hover{
     color: brown;
 }
-
-
 
 
 @media (max-width: 600px) {
@@ -743,8 +751,9 @@ color: white;
   .theme button,
   .store button,
   .market button {
-    width: 100%;
+    width: 100px;
     justify-content: center;
+
   }
 
   .total {
@@ -784,6 +793,7 @@ color: white;
 
   .apt{
     display: flex;
+    justify-content: center;
     flex-direction: column;
   }
 
@@ -798,8 +808,87 @@ color: white;
 }
 
 
+@media (min-width: 601px) and (max-width: 2500px) {
+  .p1 {
+    height: 60px;
+    gap: 30px;
+  }
+
+  .p1 img {
+    width: 80px;
+  }
 
 
+  .apt,
+  .stm {
+  display: flex;
+  justify-content: center;
+  }
 
+  .kk1 {
+    margin-top: 130px;
+    margin-right: 50px;
+  }
 
+  .apps button,
+  .theme button,
+  .store button,
+  .market button {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+  }
 
+  .apps img,
+  .theme img,
+  .store img,
+  .market img {
+    width: 40px;
+  }
+
+  .total {
+    width: 700px;
+    font-size: 18px;
+  }
+
+  .third,
+  .free {
+    justify-content: space-evenly;
+    gap: 40px;
+  }
+
+  .join,
+  .developer,
+  .connection,
+  .twitter,
+  .latest,
+  .channel,
+  .demo,
+  .partners {
+    width: 250px;
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .back {
+    padding: 100px;
+  }
+
+  .nbc {
+    padding: 80px;
+    font-size: 18px;
+  }
+
+  .bpe p:hover,
+  .nds p:hover,
+  .cdp p:hover,
+  .eum p:hover,
+  .lta p:hover {
+    color: orange;
+  }
+
+  .main{
+    flex-direction: column;
+    align-items: center;
+  }
+}
